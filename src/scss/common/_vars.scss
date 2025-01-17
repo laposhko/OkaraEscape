@@ -1,4 +1,15 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_main_color: #b4b4b4;
+$_secondary_color: #dddddd;
+$_main_bg_color: #070b0f;
+
+$_header_color: #dddddd;
+$_header_accent_background: linear-gradient(
+  90deg,
+  rgba(7, 11, 15, 0.72) 0%,
+  rgba(12, 17, 50, 0.72) 100%
+);
+
+$_accent_color: #fcef84;
+$_second_accent_color: #7e8dfc;
+$_white_color: #ffffff;
+$_secondary_white_color: #f2f2f2;
