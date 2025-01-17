@@ -1,8 +1,52 @@
-.termsandconditions-link {
+.termsandconditions-container {
+  margin-top: 66px;
+  font-weight: 400;
+  @include media(desktop) {
+    margin-top: 56px;
+  }
 }
+.termsandconditions-link {
+  position: absolute;
+  padding: 16px 24px;
+  top: 16px;
+  left: 0px;
+  color: $_white_color;
+  @include media(desktop) {
+    top: 48px;
+    left: 80px;
+  }
+}
+
 .termsandconditions-title {
+  font-family: 'Finger Paint', serif;
+  font-size: 32px;
+  line-height: 125%;
+  color: $_header_color;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
 }
 .termsandconditions-text {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 133%;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    margin-bottom: 18px;
+  }
+}
+.termsandconditions-list {
+  font-weight: 500;
+  color: $_secondary_color;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  list-style: disc;
+  list-style-position: inside;
 }
 .termsandconditions-subtitle {
+  font-family: 'Finger Paint', serif;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 16px;
 }
