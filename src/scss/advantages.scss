@@ -1,0 +1,20 @@
+.adv-title {
+  margin-bottom: 32px;
+
+  font-family: 'Finger Paint';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: calc(40 / 32); /* 125% */
+
+  text-align: center;
+  color: $_white_color;
+}
+
+.adv-bcg {
+  background-color: #212728;
+}
+
+.adv-avatar {
+  margin-right: auto;
+  margin-left: auto;
+}
