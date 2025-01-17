@@ -25,3 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+  padding: 64px 16px;
+
+  @include media(desktop) {
+    width: 1200px;
+    padding: 96px 80px;
+  }
+}
