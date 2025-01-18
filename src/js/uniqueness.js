@@ -1,7 +1,6 @@
 document
   .querySelector('.uniqueness-list')
   .addEventListener('click', function () {
-    console.log('clicked');
     const items = document.querySelectorAll(
       '.uniqueness-list .uniqueness-item'
     );
