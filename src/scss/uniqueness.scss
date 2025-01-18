@@ -1,0 +1,113 @@
+.uniqueness-section {
+  height: 472px;
+  background-image: url('../assets/uniqueness-desk.png');
+  background-size: cover;
+}
+.uniqueness-container {
+  @include media(desktop) {
+  }
+}
+.uniqueness-title {
+  margin-bottom: 64px;
+  font-family: 'Finger Paint', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: right;
+  color: $_secondary_white_color;
+  @include media(desktop) {
+    line-height: 114%;
+    font-size: 56px;
+  }
+}
+.uniqueness-list {
+  float: right;
+  position: relative;
+  width: 212px;
+  height: 116px;
+  @include media(desktop) {
+    width: 336px;
+    height: 152px;
+  }
+}
+.uniqueness-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: $_secondary_color;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  @include media(desktop) {
+    align-items: center;
+  }
+}
+
+@keyframes moveOut-mobile {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes moveOut-desktop {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visible-element {
+  opacity: 1;
+  transform: translateY(0);
+}
+.uniqueness-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: right;
+  width: 212px;
+  color: $_secondary_color;
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 150%;
+    width: 336px;
+    text-align: left;
+  }
+}
+
+.uniqueness-number {
+  font-family: 'Finger Paint', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 125%;
+  @include media(desktop) {
+    font-size: 40px;
+    line-height: 140%;
+  }
+}
