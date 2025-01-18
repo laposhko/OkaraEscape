@@ -13,7 +13,7 @@
     />
     
     <script type="module" crossorigin src="/OkaraEscape/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/OkaraEscape/assets/styles-86f9f48b.css">
+    <link rel="stylesheet" href="/OkaraEscape/assets/styles-a06a0887.css">
   </head>
   <body>
     <header class="header"><h1>HEADER</h1></header>
@@ -49,17 +49,37 @@
     <h2 class="adv-title">aDVANTAGES</h2>
 
     <div class="adv-bcg">
-      <img src="../assets/advantages/adv-1.jpg" alt="Girl" class="adv-avatar"/>
-      <h3>Immersive Storyline</h3>
-      <p>
-        Dive into the rich lore of Okara, a mythical city full of ancient
-        legends and untold secrets.
-      </p>
+      <div class="adv-container">
+        <ul class="adv-list">
+          <li class="adv-item">
+            <img
+              src="/OkaraEscape/assets/adv-1-b0dd81d9.jpg"
+              alt="Girl"
+              class="adv-item-avatar"
+            />
+            <h3 class="adv-item-title">Immersive Storyline</h3>
+            <p class="adv-item-text">
+              Dive into the rich lore of Okara, a mythical city full of ancient
+              legends and untold secrets.
+            </p>
+          </li>
+        </ul>
 
-      <div>
-        <img src="../assets/arrow.png" alt="Arrow1" />
-        <img src="../assets/arrow.png" alt="Arrow2" />
+        <div class="adv-arrow-list">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUiSURBVHgBxVjPa1xVFD5nkrF25aQltEokr2A1LrQTERqh4AMXZpllBZHgQrrL+BfE/8DEVd00qS5qEXQWIhaEFBFEUaPoQnDhFAIWjCYiknnz3r2n55577n3vhZQ2vy8zvDv3vnfPj+8733kJwjGNVutsgkhLDTiGMXrm/NzQcPNHnqbDcIRjbOzFtKD+vDWDFAGBgOhIHEiStGUhmzcm7yAhsF1ZRx6H7sBTE9NpkQ+WyDQS95uccUTQ+eFlYGJiJikacM0U/RSiSZ6oYb+GeCgkfPb5N+aoeWIVCBnrhtim8Imu+HGgGWhPdTjd/8+bYpCCRdBEh20XsETvQreeCAfDgXbaacHWMLM76/gki1UkNaIuSOYd8bxPKB7u24Gp9J00z/Mlg4Nxd7bPMjrjoPl2vI8UCPh7l/bhwNT0uwlkxZIx/ZcBCm9J9yRSUAgQAxYSvP6isLonEl569ercUDG0yuekGg15w6Dc1oBRF6l8VuMPmdhdBtKZGynkLChFlpJAq8YwOCGfmOZauqtDdQgeVgnTmU9bfKOQzISARNLKA8UbiGjjdrNYNR8dfgglnL68klK+xVhnCVTOJk26q6rK2Y74/nCKFS+3EqgKRl88be7rwMzsN0memSXXOKi+JRGQVhfi9lAxehkVP25hdVu8bOxs/Jc5a5qr/ECqwVCZQ8KKtgScKWRe4pVGFxY8QiFVmjlFaxsEl6/8wTVdcNdi/SZ3NiqJnFHUHiaPUrRZ4zrFHPmURzEQ+bFWJ37IreLATGejdWLLtctBB6gIOhbCiU5olFQjIJSKA4GfUuRecikgD1EPFAARKxp+vfNfanPGGjGJ7ouXpYKhRuw9CcsEyriANwW4SXuu/4mx+WqJqiR5CLhVDathDQuxzGsMikoJK4MGjI0danhDiJwi97e1wRLMxocLJ5cfadIkUfFekLNKuQgEAinFpygIgZqgqLaBW6QeQwAk8EQZGM4irYLlhZHNm+8/0cmHzDne62mCAtFKXdWPIye6j08lBpShzCBCwAbrDPCNSrwQd2tl2L16rvfJtWfYCfM2P/hvSBcq48kGkvmqUMKUtiGKTai3sjAoFmmggKzuqAPd5QsLjTyf5LuuRwgk0xhrLaJIFZrpqVUuUUUTY2MQTfDVed9u2P3opd5nNy7N8r1vspU75dlCfMKoA54zAdRSr2J91qVSEVGyPrgdf/HxK8uZySZ5ulCeQWUoKhCh5Vds+/hVeKAsnZozCLsY3I4TGGQrrjFZmwG/8QJ3SLB2IHNWUPDrmV77JPsmQyPXPvEV3Rrfy3uD3b0V3+6+1rv9+SyTFDtMyA3PD6CyCipFU9WbsFLpXCJBuMc3oq9vvbVojXkBwH6gp9X0GLwMQ1nt0btgXbsH0RDscaz1bm2u9b7sjo2nPbJFG8i0rDWceu4lYFDm3FfIvZ/zGpHhMuYvFWzW7fOV79v3HybffTV/3TSbk4R2sfYGEjUcKu/AqrCkPaT+NrP/0Z66kuQDu8IkG/fE63PUAyGnEDOQzzIRCzfPYM8Q7DTurn2/+defPyyefvzCJqf9Iqf6UXLptwYdBAIJp58EHiNQHKgDYfx99+dvR089d5OwGGEjbcGfvyBX5YNcCzgUB9xYX/9185/137qnRp++Y03unGg5g1w5QFYzcZgOhLGx/vtPI48l3FPMSTZ6kdnv4KDgwIGS8EHjbNJmJc2ZpINElJHV8ljG6Oj5udOnn9wYGTlDR5qB6nD/pms07Pw91BlYJDx3GygAAAAASUVORK5CYII="
+            alt="Left arrow"
+            class="adv-arrow-item"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAYAAACfKfiZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATySURBVHgBxVg9bBxFFH5vdu/H0NxBEqcJ2ggUiS5GiEARZCIQlmhOigQSCHJHEypyBRIVxYkOId3RESFkFzSIoFyD5ALJixAEIbDNj4RFwa2pXBEoAFnH7WNm3pvZuVMSO7bPfrZvZ2dnZ9773ve+GR/UascXa7WTCRyV1euzdP+xU3/Mzj7UhiMwrNdP5CqqQBRXUanKAPL4wtbWegaHZAoQ0BiQ9gbhdFSOB6eSJ7pJMl+DQzCl/0ibXh2MDwSmDaoNEa49eGbhEkzZsH7fCYp0CpSqgop1KqQd6bZNDVaWIoDOxkY/gymYMmHb8PWvbZN8cq8Z0YS4uvrw2ZenQlKNwCxFqkw6WoyiKgghNQpliuIZTcyyRsbcV8yYzVKunlpffz+DAzIlIVsILAfQxs0wEDPTe4uYULk0eOTcG92z8+0DIakqILdro/CQkFc2BCVxwV9IYTsa3rv22JNv75ukyk5pyjCI1HQZN9gh3bZQWHcsKgwMJrpn6dz8O4uPL3QT2KMpWYDnDz3QRq6LlcI1ma/k7qEZjeLV889e3RNJjRJSVJDMlB/aMowMMatOIbk8bZkyUc14M7a4r5J+nmEpv5D2W9luHVAeeXTBSUlyzCxPXqSEmMxNpBAyMBmj0yqfGTzduN6db1zfFUmVpZifCBnbYmJy3LPOIUxQRVTUCQj5rF2pRJW1hedXdiSp8mtYvruUj60xsaIpF7kCA0WFbPEVTRFBop8sPvfiV4uN5o0Ebu9AEX0gAQIzoqBC4TDnGKfBYKgIQqdJiXsmLdDM/yuvNl754cqtHbARUDGB4zsKJkV4ZlILsmiXVS6w1WKQx6CUcnSU4bmoDhh1L77666Dx2iAZd4BXQAhicJlwt0HsnGSHgqQOrG6RJyzv7oowcJzHYFLOo8ELl7e6jfbNGjsQIierI3p2ucrwXEMMHRVJsi8gjSmpuWUxFefcbq/n10p6zxDXXnr930sKCtBZcidozjD7MV6AuFq5V7xzs5CUKAk4NnGCxtj0qGBTSTdIGkRuHQGlKJkKLknkq44f05iSy+KubN0ngVBFO5Pn1PunRHMf9WbSWKZzg8F7SY5iHgf3DEH2CS8M4kpgOIagfc+WZko06nxy9WTqHseytF1M6OhOI2P7sCAtLED0OgABIX2OBEXnAcKfBHnn0w/P9GDCPAIIQX5EcplcPJug7OrSLeplsggYfQLlTJGqaNjqLz2awS0s5mgCJQgcCjXAi6R4YfGnQKMkv8q/DBmN8tZn186ncAezOoDoMss1PgbHRDbDVBMU50ceSlIVeW97tD23fO2ZFHawmN/zewBOSH+g+bIZ8Y+rHRxzlCDVu1vn8/7FFHZpMcs9+sWQCTZhQrpCIaUuwQnDXzlB58vlZg/u0mKSMveqrZvK14VfkK9uX0JwWTMD09Fw1PomvZzBHsxWQTgbby4+NNEBD4nXwZwo0wxqfbvyZgr7MCXw8qzozj5U7HbFUYlv+MDay0t/z32XvpXCPi2Wfb2wyfzLSZg9oFRH3vnxxrspHJDFVOgoBqecYuPgM4lVsp+//+CuSbajA8WBuyi1YgeyJZpuD7db2U8fZzAFi73uEYzt+bpnM1fU+u2XfgpTNOX1XrhGLEzvwYjmso3lFKZssd9cuPFFRNj5Pfs6hcMy8+/5seMP3DyqL6lAf023cpRf0/0P3qyI0xXO1HEAAAAASUVORK5CYII="
+            alt="Right arrow"
+            class="adv-arrow-item"
+          />
+        </div>
       </div>
+
+      <img src="/OkaraEscape/assets/yellow-drops-8dd9af7f.png" alt="Drops" class="adv-drops" />
     </div>
   </div>
 </section>
