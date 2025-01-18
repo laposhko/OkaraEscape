@@ -1,8 +1,10 @@
+.uniqueness-section {
+  height: 472px;
+  background-image: url('../assets/uniqueness-desk.png');
+  background-size: cover;
+}
 .uniqueness-container {
-  // background-image: url('../assets/uniqueness-mob.png');
-  // background-color: #fff;
   @include media(desktop) {
-    // background-image: url('../assets/uniqueness-desk.png');
   }
 }
 .uniqueness-title {
@@ -20,11 +22,9 @@
 }
 .uniqueness-list {
   float: right;
-
   position: relative;
   width: 212px;
   height: 116px;
-  overflow: hidden;
   @include media(desktop) {
     width: 336px;
     height: 152px;
@@ -47,6 +47,39 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   @include media(desktop) {
     align-items: center;
+  }
+}
+
+@keyframes moveOut-mobile {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes moveOut-desktop {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .visible-element {
