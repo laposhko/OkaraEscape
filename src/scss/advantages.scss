@@ -4,17 +4,130 @@
   font-family: 'Finger Paint';
   font-size: 32px;
   font-weight: 400;
-  line-height: calc(40 / 32); /* 125% */
+  line-height: calc(40 / 32);
 
   text-align: center;
   color: $_white_color;
+
+  @include media(desktop) {
+    color: $_white_color;
+    font-size: 56px;
+    line-height: calc(64 / 56);
+  }
 }
 
 .adv-bcg {
+  position: relative;
   background-color: #212728;
 }
 
-.adv-avatar {
+.adv-list {
+  margin-bottom: 56px;
+}
+
+.adv-item {
+  @include media(desktop) {
+    width: 864px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.adv-item-avatar {
+  width: 88px;
+  height: 88px;
+
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 16px;
+
+  border-radius: 16px;
+
+  @include media(desktop) {
+    width: 160px;
+    height: 160px;
+    margin-right: 16px;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    border-radius: 32px;
+  }
+}
+
+.adv-item-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: calc(24 / 20);
+  margin-bottom: 32px;
+
+  color: $_white_color;
+  text-align: center;
+
+  @include media(desktop) {
+    width: 160px;
+    margin-bottom: 0;
+    margin-right: 100px;
+
+    font-size: 24px;
+    line-height: calc(32 / 24); /* 133.333% */
+  }
+}
+
+.adv-item-text {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(16 / 12);
+
+  color: $_main_color;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+.adv-arrow-list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+
+  @include media(desktop) {
+    flex-direction: column;
+  }
+}
+
+.adv-arrow-item {
+  width: 32px;
+  height: 40px;
+
+  @include media(desktop) {
+    rotate: 90deg;
+  }
+}
+
+.adv-drops {
+  position: absolute;
+  top: -24px;
+  right: 0;
+
+  width: 39px;
+  height: 57px;
+
+  @include media(desktop) {
+    top: -76px;
+    right: -48px;
+
+    width: 78px;
+    height: 114px;
+  }
+}
+
+.adv-container {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
