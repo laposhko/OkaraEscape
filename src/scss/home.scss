@@ -2,6 +2,10 @@
   background-image: url('../assets/hero-bcg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 40px;
+  @include media(desktop) {
+    padding-top: 96px;
+  }
 }
 .home-container {
   @include media(desktop) {
@@ -72,7 +76,6 @@
   @include media(desktop) {
     width: 168px;
     height: 49px;
-    margin-bottom: 200px;
   }
 }
 .home-images {
