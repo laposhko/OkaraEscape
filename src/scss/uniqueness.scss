@@ -1,7 +1,11 @@
 .uniqueness-section {
   height: 472px;
-  background-image: url('../assets/uniqueness-desk.png');
+  background-image: url('../assets/uniqueness-mob.png');
+
   background-size: cover;
+  @include media(desktop) {
+    background-image: url('../assets/uniqueness-desk.png');
+  }
 }
 .uniqueness-container {
   @include media(desktop) {
