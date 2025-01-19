@@ -25,9 +25,10 @@
   margin-bottom: 56px;
 }
 
-.adv-item {
+li.adv-item {
   @include media(desktop) {
     width: 864px;
+    height: 160px;
     display: flex;
     align-items: center;
   }
@@ -124,10 +125,31 @@
   }
 }
 
-.adv-container {
+div.adv-container {
   @include media(desktop) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+}
+
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-prev {
+  background-image: url('assets/advantages/arrow-left.png') !important;
+
+  @include media(desktop) {
+    background-image: url('assets/advantages/arrow-top.png') !important;
+  }
+}
+
+.swiper-button-next {
+  background-image: url('assets/advantages/arrow-right.png') !important;
+
+  @include media(desktop) {
+    background-image: url('assets/advantages/arrow-bottom.png') !important;
   }
 }
