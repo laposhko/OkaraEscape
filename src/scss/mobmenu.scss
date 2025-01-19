@@ -1,0 +1,42 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(7, 11, 15, 0.56);
+  @include media(desktop) {
+    display: none;
+  }
+}
+.backdrop--hide {
+  display: none;
+}
+.backdrop--show {
+  display: block;
+}
+.mobmenu {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  padding: 32px 40px;
+  width: 240px;
+  height: 312px;
+  box-shadow: 4px 4px 32px 0 rgba(62, 84, 250, 0.4);
+  background: $_main_bg_color;
+}
+.mobmenu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.mobmenu-item {
+}
+.mobmenu-link {
+  padding: 16px 10px;
+}
