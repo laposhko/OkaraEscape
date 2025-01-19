@@ -1,0 +1,37 @@
+.how-play-gradient-container {
+  position: relative;
+}
+.how-play-gradient {
+  width: 168px;
+  height: 168px;
+  margin: 0 auto;
+
+  background-color: rgba(196, 130, 252, 0.48);
+  //   filter: blur(75px);
+  //   backdrop-filter: blur(10px) saturate(70%);
+  background: radial-gradient(
+    circle,
+    rgba(196, 130, 252, 0.48) 0%,
+    transparent 70%
+  );
+  //   filter: blur(20px);
+}
+
+.how-play-title {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  font-family: 'Finger Paint';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: calc(40 / 32);
+
+  color: $_white_color;
+  text-align: center;
+}
+
+.yellow-text {
+  color: $_accent_color;
+}
