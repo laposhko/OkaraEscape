@@ -1,14 +1,12 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
-// import 'swiper/scss';
-// import 'swiper/scss/navigation';
 
 const swiper = new Swiper('.swiper', {
   loop: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
   },
 
   breakpoints: {
@@ -21,16 +19,18 @@ const swiper = new Swiper('.swiper', {
       direction: 'vertical',
       slidesPerView: 2,
       spaceBetween: 32,
-      height: '320px',
-      //   autoHeight: true,
     },
   },
 });
 
-document.querySelector('.swiper-button-next').addEventListener('click', () => {
-  swiper.slideNext();
-});
+document
+  .querySelector('.swiper-button-next-custom')
+  .addEventListener('click', () => {
+    swiper.slideNext();
+  });
 
-document.querySelector('.swiper-button-prev').addEventListener('click', () => {
-  swiper.slidePrev();
-});
+document
+  .querySelector('.swiper-button-prev-custom')
+  .addEventListener('click', () => {
+    swiper.slidePrev();
+  });
