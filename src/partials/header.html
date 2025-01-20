@@ -1,27 +1,37 @@
 <header class="header">
   <div class="header-container">
-    <img class="header-icon" src="./assets/header-icon.png" alt="logo" />
+    <picture>
+      <source
+        srcset="./assets/header-icon.png 1x, ./assets/header-icon@2x.png 2x"
+      />
+      <img class="header-icon" src="./assets/header-icon.png" alt="logo" />
+    </picture>
     <nav>
       <ul class="header-list">
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#description">Game description</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#advantages">Advantages</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#howtoplay">How To Play</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#uniqueness">Our uniqueness</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#gallery">Gallery</a>
         </li>
       </ul>
     </nav>
     <button class="header-btn">
-      <img src="./assets/burger-icon.png" alt="mobile menu" />
+      <picture>
+        <source
+          srcset="./assets/burger-icon.png 1x, ./assets/burger-icon@2x.png 2x"
+        />
+        <img src="./assets/burger-icon.png" alt="mobile menu button" />
+      </picture>
     </button>
   </div>
 </header>

@@ -36,3 +36,15 @@
     padding: 96px 80px;
   }
 }
+//bounce animation for hover
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
