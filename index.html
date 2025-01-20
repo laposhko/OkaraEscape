@@ -15,33 +15,43 @@
     <script type="module" crossorigin src="/OkaraEscape/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/OkaraEscape/assets/vendor-9f715778.js">
     <link rel="stylesheet" href="/OkaraEscape/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/OkaraEscape/assets/styles-044ec246.css">
+    <link rel="stylesheet" href="/OkaraEscape/assets/styles-3d96f389.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container">
-    <img class="header-icon" src="/OkaraEscape/assets/header-icon-c3e383e2.png" alt="logo" />
+    <picture>
+      <source
+        srcset="/OkaraEscape/assets/header-icon-c3e383e2.png 1x, /OkaraEscape/assets/header-icon@2x-9f3bb292.png 2x"
+      />
+      <img class="header-icon" src="/OkaraEscape/assets/header-icon-c3e383e2.png" alt="logo" />
+    </picture>
     <nav>
       <ul class="header-list">
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#description">Game description</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#advantages">Advantages</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#howtoplay">How To Play</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#uniqueness">Our uniqueness</a>
         </li>
-        <li class="header-item">
+        <li>
           <a class="header-link" href="#gallery">Gallery</a>
         </li>
       </ul>
     </nav>
     <button class="header-btn">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVHgB7dbBDQIhEEDRIVgAJUgHUsqWYgWWYEnaCZYAFACOsYFlM8Zk97+E23CAhB9EAAAAADNuZjjnfO69P8TIGKN475cY42vtnpPMKbqeYsS5qfsCdmFLJe76WIIYqbUuKaWydn66EpqioEss6MFLUPKtD3AIWypxE0OttesvK/H5sFwss0YlAAAA8EdvRUQxUCDWpicAAAAASUVORK5CYII=" alt="mobile menu" />
+      <picture>
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVHgB7dbBDQIhEEDRIVgAJUgHUsqWYgWWYEnaCZYAFACOsYFlM8Zk97+E23CAhB9EAAAAADNuZjjnfO69P8TIGKN475cY42vtnpPMKbqeYsS5qfsCdmFLJe76WIIYqbUuKaWydn66EpqioEss6MFLUPKtD3AIWypxE0OttesvK/H5sFwss0YlAAAA8EdvRUQxUCDWpicAAAAASUVORK5CYII= 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEcSURBVHgB7drBTQJREADQAbYAO3A3wN0SKEUrUCqQEuhAS6EEPQNZ7IAGAP8mJFqAY37Ce5e5/j+ZTDKTiQAAAAAAAAAAAADgxygS9X1/dz6fX0ej0UNU6HK5HMbj8bLrumMkaSJRSe6qhOfykahVeeNXCatIMo5EJbEfUbmhiiNRaosYbLfbRWkRbVRoSO58Pt8EAADwp9IHjf1+/1LCXVRoGDRms9l7JEpN8G63eyxT3FvUbTmdTteRJHUXUZJbZeX+Vqo4bZM2SG8R1ypuo07HzOoFAIBblT5o9H2/OJ1ObVRoMpkcuq7bRKKb30WUUfkpc+GTfRfRRv1Sr45SL3uapllf28N91OmztIlVAAAAAAAAAAAAAPBPvgE/hFV6PtK91gAAAABJRU5ErkJggg== 2x"
+        />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVHgB7dbBDQIhEEDRIVgAJUgHUsqWYgWWYEnaCZYAFACOsYFlM8Zk97+E23CAhB9EAAAAADNuZjjnfO69P8TIGKN475cY42vtnpPMKbqeYsS5qfsCdmFLJe76WIIYqbUuKaWydn66EpqioEss6MFLUPKtD3AIWypxE0OttesvK/H5sFwss0YlAAAA8EdvRUQxUCDWpicAAAAASUVORK5CYII=" alt="mobile menu button" />
+      </picture>
     </button>
   </div>
 </header>
@@ -67,26 +77,52 @@
       </p>
       <a
         class="home-google-btn"
+        target="_blank"
         href="https://play.google.com/store/apps/details?id=com.cy.escapemerge"
-        ><img src="data:image/png;base64,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" alt="google play button"
-      /></a>
+      >
+        <picture>
+          <source
+            srcset="data:image/png;base64,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 1x, /OkaraEscape/assets/google-play-btn@2x-adb70c78.png 2x"
+          />
+          <img
+            class="home-google-btn-img"
+            src="data:image/png;base64,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"
+            alt="google play button"
+          />
+        </picture>
+      </a>
     </div>
     <div class="home-images">
-      <img
-        class="home-img left-img"
-        src="/OkaraEscape/assets/hero-img-eeca0bab.png"
-        alt="okara escape game"
-      />
-      <img
-        class="home-img main-img"
-        src="/OkaraEscape/assets/hero-img-eeca0bab.png"
-        alt="okara escape game"
-      />
-      <img
-        class="home-img right-img"
-        src="/OkaraEscape/assets/hero-img-eeca0bab.png"
-        alt="okara escape game"
-      />
+      <picture>
+        <source
+          srcset="/OkaraEscape/assets/hero-img-eeca0bab.png 1x, /OkaraEscape/assets/hero-img@2x-4b0f8edc.png 2x"
+        />
+        <img
+          class="home-img left-img"
+          src="/OkaraEscape/assets/hero-img-eeca0bab.png"
+          alt="okara escape game"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/OkaraEscape/assets/hero-img-eeca0bab.png 1x, /OkaraEscape/assets/hero-img@2x-4b0f8edc.png 2x"
+        />
+        <img
+          class="home-img main-img"
+          src="/OkaraEscape/assets/hero-img-eeca0bab.png"
+          alt="okara escape game"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/OkaraEscape/assets/hero-img-eeca0bab.png 1x, /OkaraEscape/assets/hero-img@2x-4b0f8edc.png 2x"
+        />
+        <img
+          class="home-img right-img"
+          src="/OkaraEscape/assets/hero-img-eeca0bab.png"
+          alt="okara escape game"
+        />
+      </picture>
     </div>
   </div>
 </section>
@@ -108,11 +144,22 @@
         to freedom—or deeper into Okara’s grip.
       </p>
     </div>
-    <img
-      src="/OkaraEscape/assets/description-eaad5af1.jpg"
+    <!-- <img
+      src="assets/description.jpg"
       alt="girl from the game"
       class="description-img"
-    />
+    /> -->
+
+    <picture>
+      <source
+        srcset="/OkaraEscape/assets/description-eaad5af1.jpg 1x, /OkaraEscape/assets/description@2x-19ed8011.jpg 2x"
+      />
+      <img
+        src="/OkaraEscape/assets/description-eaad5af1.jpg"
+        alt="girl from the game"
+        class="description-img"
+      />
+    </picture>
   </div>
 </section>
 
