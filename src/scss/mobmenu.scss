@@ -35,8 +35,13 @@
   align-items: center;
   height: 100%;
 }
-.mobmenu-item {
-}
+
 .mobmenu-link {
   padding: 16px 10px;
+}
+.mobmenu-item:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+  color: $_secondary_color;
 }

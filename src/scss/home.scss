@@ -7,6 +7,11 @@
     padding-top: 96px;
   }
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home-section {
+    background-image: url('../assets/hero-bcg@2x.png');
+  }
+}
 .home-container {
   @include media(desktop) {
     display: flex;
@@ -71,12 +76,23 @@
   color: $_secondary_color;
 }
 .home-google-btn {
+  display: block;
   width: 121px;
   height: 36px;
+  box-shadow: 3px 3px 20px 0 rgba(166, 68, 250, 0.4);
+  // transition: transform 0.3s ease-in-out;
   @include media(desktop) {
     width: 168px;
     height: 49px;
   }
+}
+.home-google-btn:hover {
+  // transform: scale(1.2);
+  // transition: transform 0.3s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+}
+.home-google-btn-img {
+  width: 100%;
 }
 .home-images {
   position: relative;

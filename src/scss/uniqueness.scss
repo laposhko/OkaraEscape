@@ -1,7 +1,18 @@
 .uniqueness-section {
   height: 472px;
-  background-image: url('../assets/uniqueness-desk.png');
+  background-image: url('../assets/uniqueness-mob.png');
   background-size: cover;
+  @include media(desktop) {
+    background-image: url('../assets/uniqueness-desk.png');
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .uniqueness-section {
+    background-image: url('../assets/uniqueness-mob@2x.png');
+    @include media(desktop) {
+      background-image: url('../assets/uniqueness-desk@2x.png');
+    }
+  }
 }
 .uniqueness-container {
   @include media(desktop) {

@@ -47,12 +47,17 @@
     height: 72px;
   }
 }
-.header-item {
-}
+
 .header-link {
   padding: 24px;
   height: 100%;
   display: block;
+}
+.header-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
+  color: $_secondary_color;
 }
 .header-btn {
   all: unset;

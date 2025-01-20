@@ -19,26 +19,55 @@
       </p>
       <a
         class="home-google-btn"
+        target="_blank"
         href="https://play.google.com/store/apps/details?id=com.cy.escapemerge"
-        ><img src="./assets/google-play-btn.png" alt="google play button"
-      /></a>
+      >
+        <picture>
+          <source
+            srcset="
+              ./assets/google-play-btn.png    1x,
+              ./assets/google-play-btn@2x.png 2x
+            "
+          />
+          <img
+            class="home-google-btn-img"
+            src="./assets/google-play-btn.png"
+            alt="google play button"
+          />
+        </picture>
+      </a>
     </div>
     <div class="home-images">
-      <img
-        class="home-img left-img"
-        src="./assets/hero-img.png"
-        alt="okara escape game"
-      />
-      <img
-        class="home-img main-img"
-        src="./assets/hero-img.png"
-        alt="okara escape game"
-      />
-      <img
-        class="home-img right-img"
-        src="./assets/hero-img.png"
-        alt="okara escape game"
-      />
+      <picture>
+        <source
+          srcset="./assets/hero-img.png 1x, ./assets/hero-img@2x.png 2x"
+        />
+        <img
+          class="home-img left-img"
+          src="./assets/hero-img.png"
+          alt="okara escape game"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="./assets/hero-img.png 1x, ./assets/hero-img@2x.png 2x"
+        />
+        <img
+          class="home-img main-img"
+          src="./assets/hero-img.png"
+          alt="okara escape game"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="./assets/hero-img.png 1x, ./assets/hero-img@2x.png 2x"
+        />
+        <img
+          class="home-img right-img"
+          src="./assets/hero-img.png"
+          alt="okara escape game"
+        />
+      </picture>
     </div>
   </div>
 </section>
