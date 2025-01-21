@@ -143,10 +143,14 @@
 .how-play-google {
   width: 168px;
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
 
   filter: drop-shadow(3.398px 3.398px 20.387px rgba(166, 68, 250, 0.4));
 
   @include media(desktop) {
+    margin-right: unset;
+    margin-left: unset;
     position: absolute;
     bottom: 0;
   }
