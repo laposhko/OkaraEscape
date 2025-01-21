@@ -18,7 +18,11 @@
 
 .adv-bcg {
   position: relative;
+
   background-color: #212728;
+  background-image: url(/assets/advantages/adv-bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .adv-list {
@@ -31,6 +35,15 @@ li.adv-item {
     height: 160px;
     display: flex;
     align-items: center;
+    gap: 100px;
+  }
+}
+
+.adv-item-flex {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    min-width: 336px;
   }
 }
 
@@ -68,7 +81,6 @@ li.adv-item {
   @include media(desktop) {
     width: 160px;
     margin-bottom: 0;
-    margin-right: 100px;
 
     font-size: 24px;
     line-height: calc(32 / 24); /* 133.333% */
@@ -130,26 +142,47 @@ div.adv-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: 136px;
   }
 }
 
-div.swiper-button-next::after,
-div.swiper-button-prev::after {
-  content: '';
-}
+// div.swiper-button-next::after,
+// div.swiper-button-prev::after {
+//   content: '';
+// }
 
-.swiper-button-prev {
-  background-image: url('assets/advantages/arrow-left.png') !important;
-
+.swiper {
   @include media(desktop) {
-    background-image: url('assets/advantages/arrow-top.png') !important;
+    height: 352px;
   }
 }
 
-.swiper-button-next {
-  background-image: url('assets/advantages/arrow-right.png') !important;
+.swiper-button-prev-custom {
+  width: 32px;
+  height: 40px;
+
+  background-image: url('/assets/advantages/arrow-left.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @include media(desktop) {
-    background-image: url('assets/advantages/arrow-bottom.png') !important;
+    width: 40px;
+    height: 32px;
+    background-image: url('/assets/advantages/arrow-top.png');
+  }
+}
+
+.swiper-button-next-custom {
+  width: 32px;
+  height: 40px;
+
+  background-image: url('/assets/advantages/arrow-right.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include media(desktop) {
+    width: 40px;
+    height: 32px;
+    background-image: url('/assets/advantages/arrow-down.png');
   }
 }
