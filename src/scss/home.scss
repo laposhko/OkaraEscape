@@ -29,46 +29,37 @@
 }
 .home-title {
   font-family: 'Finger Paint', serif;
-  font-size: 24px;
-  line-height: 133%;
+  @include font(24, 133);
   color: $_secondary_color;
   margin-bottom: 16px;
   @include media(desktop) {
-    font-size: 40px;
-    line-height: 140%;
+    @include font(40, 140);
   }
 }
 .home-size-accent {
-  font-size: 32px;
-  line-height: 125%;
+  @include font(32, 125);
   @include media(desktop) {
-    font-size: 56px;
-    line-height: 114%;
+    @include font(56, 114);
   }
 }
 .home-color-accent {
   color: $_accent_color;
 }
 .home-text {
-  font-size: 16px;
-  line-height: 150%;
+  @include font(16, 150);
   color: $_secondary_color;
   margin-bottom: 32px;
   @include media(desktop) {
-    font-size: 24px;
-    line-height: 133%;
+    @include font(24, 133);
     margin-bottom: 40px;
   }
 }
 .home-description {
-  font-size: 12px;
-  line-height: 133%;
+  @include font(12, 133);
   margin-bottom: 32px;
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 150%;
+    @include font(16, 150);
     position: absolute;
-
     bottom: 0;
   }
 }
@@ -80,7 +71,6 @@
   width: 121px;
   height: 36px;
   box-shadow: 3px 3px 20px 0 rgba(166, 68, 250, 0.4);
-  // transition: transform 0.3s ease-in-out;
   @include media(desktop) {
     width: 168px;
     height: 49px;
@@ -118,7 +108,6 @@
 .left-img {
   left: 20px;
   top: 22px;
-
   transform: rotate(8deg);
   opacity: 0.16;
   @include media(desktop) {
@@ -131,7 +120,6 @@
   z-index: 6;
   box-shadow: 3px 3px 18px 0 rgba(62, 84, 250, 0.4);
   left: 81px;
-
   @include media(desktop) {
     left: 48%;
     transform: translateX(-50%);

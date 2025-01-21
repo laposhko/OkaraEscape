@@ -17,10 +17,8 @@
   margin-left: auto;
   width: 320px;
   height: 72px;
-
   padding-right: 16px;
   padding-left: 16px;
-
   @include media(desktop) {
     border-radius: 64px;
     width: 1040px;
@@ -68,4 +66,10 @@
   @include media(desktop) {
     display: none;
   }
+}
+
+.header-btn:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  animation: bounce 0.5s ease-in-out;
 }
