@@ -2,14 +2,12 @@ const headerBtn = document.querySelector('.header-btn');
 const backdrop = document.querySelector('.backdrop');
 const links = document.querySelectorAll('.mobmenu-link');
 function showMobileMenu() {
-  backdrop.classList.remove('backdrop--hide');
   backdrop.classList.add('backdrop--show');
   document.body.style.overflow = 'hidden';
 }
 function closeMobileMenu(event) {
   if (event.target === event.currentTarget) {
     backdrop.classList.remove('backdrop--show');
-    backdrop.classList.add('backdrop--hide');
     document.body.style.overflow = 'auto';
   }
 }

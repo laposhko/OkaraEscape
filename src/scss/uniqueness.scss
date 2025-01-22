@@ -1,4 +1,4 @@
-.uniqueness-section {
+.uniqueness-container {
   height: 472px;
   background-image: url('../assets/uniqueness-mob.png');
   background-size: cover;
@@ -7,17 +7,14 @@
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .uniqueness-section {
+  .uniqueness-container {
     background-image: url('../assets/uniqueness-mob@2x.png');
     @include media(desktop) {
       background-image: url('../assets/uniqueness-desk@2x.png');
     }
   }
 }
-.uniqueness-container {
-  @include media(desktop) {
-  }
-}
+
 .uniqueness-title {
   margin-bottom: 64px;
   font-family: 'Finger Paint', serif;

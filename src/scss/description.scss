@@ -47,6 +47,9 @@
   @include font(12, 133);
   text-align: justify;
   color: $_secondary_color;
+  @include media(desktop) {
+    @include font(16, 150);
+  }
 }
 .description-img {
   display: block;

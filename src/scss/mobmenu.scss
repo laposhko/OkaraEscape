@@ -6,19 +6,25 @@
   height: 100%;
   backdrop-filter: blur(8px);
   background: rgba(7, 11, 15, 0.56);
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  visibility: hidden;
+
   @include media(desktop) {
     display: none;
   }
 }
-.backdrop--hide {
-  display: none;
-}
+
 .backdrop--show {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop--show .mobmenu {
+  top: 80px;
 }
 .mobmenu {
   position: fixed;
-  top: 80px;
+  top: -100%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 16px;
@@ -27,6 +33,7 @@
   height: 312px;
   box-shadow: 4px 4px 32px 0 rgba(62, 84, 250, 0.4);
   background: $_main_bg_color;
+  transition: top 0.3s ease-in-out;
 }
 .mobmenu-list {
   display: flex;

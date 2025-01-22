@@ -10,7 +10,7 @@
   padding: 16px 24px;
   top: 16px;
   left: 0px;
-  color: $_white_color;
+  color: $_secondary_color;
   @include media(desktop) {
     top: 48px;
     left: 80px;
@@ -20,18 +20,20 @@
 .termsandconditions-title {
   font-family: 'Finger Paint', serif;
   @include font(32, 125);
-  color: $_header_color;
+  color: $_secondary_color;
   margin-bottom: 16px;
   @include media(desktop) {
     margin-bottom: 24px;
+    @include font(56, 115);
   }
 }
 .termsandconditions-text {
-  font-family: var(--font-family);
   @include font(12, 133);
   margin-bottom: 16px;
+  color: $_main_color;
   @include media(desktop) {
     margin-bottom: 18px;
+    @include font(16, 150);
   }
 }
 .termsandconditions-list {
