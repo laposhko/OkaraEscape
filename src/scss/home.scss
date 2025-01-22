@@ -1,22 +1,37 @@
-.home-section {
+.home-container {
   background-image: url('../assets/hero-bcg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 40px;
-  @include media(desktop) {
-    padding-top: 96px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .home-section {
-    background-image: url('../assets/hero-bcg@2x.png');
-  }
-}
-.home-container {
+  padding-top: 96px !important;
+
   @include media(desktop) {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 184px !important;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home-container {
+    background: linear-gradient(
+        180deg,
+        rgba(31, 42, 125, 0.24) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../assets/hero-bcg@2x.png');
+  }
+}
+.home-gradient-blur {
+  width: 565px;
+  height: 436px;
+  background-color: rgba(31, 42, 125, 0.24);
+  filter: blur(240px);
+  position: absolute;
+  top: -62px;
+  left: -247px;
+  @include media(desktop) {
+    width: 776px;
+    height: 598px;
   }
 }
 .home-content {

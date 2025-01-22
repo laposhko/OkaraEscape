@@ -3,7 +3,6 @@ import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-
   navigation: {
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
