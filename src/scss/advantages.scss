@@ -155,11 +155,6 @@ div.adv-container {
   }
 }
 
-// div.swiper-button-next::after,
-// div.swiper-button-prev::after {
-//   content: '';
-// }
-
 .swiper {
   @include media(desktop) {
     height: 352px;
