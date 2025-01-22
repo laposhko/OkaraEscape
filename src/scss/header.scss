@@ -1,12 +1,12 @@
 .header {
   position: absolute;
+  z-index: 7;
   top: 0;
   right: 50%;
   transform: translateX(50%);
   @include media(desktop) {
     margin-top: 16px;
     position: fixed;
-    z-index: 7;
   }
 }
 .header-container {
