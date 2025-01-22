@@ -162,10 +162,35 @@ div.adv-container {
 }
 
 .adv-arrow-btn {
+  position: relative;
   background: none;
   border: none;
   outline: none;
   padding: 0;
+}
+
+.adv-btn-gradient:hover {
+  background-color: rgba(196, 130, 252, 0.48);
+  filter: blur(75px);
+}
+
+.adv-arrow-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+
+  background-color: rgba(196, 130, 252, 0.48);
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.adv-arrow-btn:hover::before {
+  opacity: 1;
 }
 
 .swiper-button-prev-custom {
