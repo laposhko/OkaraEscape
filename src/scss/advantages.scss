@@ -167,12 +167,27 @@ div.adv-container {
   border: none;
   outline: none;
   padding: 0;
+  transition: transform 0.3s ease-in-out;
 }
 
-.adv-btn-gradient:hover {
-  background-color: rgba(196, 130, 252, 0.48);
-  filter: blur(75px);
+.adv-arrow-btn:hover {
+  animation: wave 0.5s ease-in-out infinite alternate;
 }
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+// .adv-btn-gradient:hover {
+//   background-color: rgba(196, 130, 252, 0.48);
+//   filter: blur(75px);
+// }
 
 .adv-arrow-btn::before {
   content: '';

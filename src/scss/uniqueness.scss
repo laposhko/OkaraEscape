@@ -97,6 +97,7 @@
   text-align: right;
   width: 212px;
   color: $_secondary_color;
+
   @include media(desktop) {
     @include font(16, 150);
     width: 336px;
