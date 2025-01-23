@@ -40,7 +40,8 @@ footerLinks.forEach(link => {
         });
       }
     } else {
-      window.location.href = `${window.location.origin}/index.html#${targetId}`;
+      const baseUrl = window.location.origin + '/OkaraEscape';
+      window.location.href = `${baseUrl}/index.html#${targetId}`;
     }
   });
 });
