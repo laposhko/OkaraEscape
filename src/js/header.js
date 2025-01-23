@@ -16,11 +16,15 @@ backdrop.addEventListener('click', closeMobileMenu);
 links.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault();
-    const wishedSection = document.getElementById(link.getAttribute('href'));
+
+    const targetId = link.getAttribute('href').substring(1);
+    const wishedSection = document.getElementById(targetId);
+
+    closeMobileMenu(event);
+
     wishedSection.scrollIntoView({
       behavior: 'smooth',
     });
-    closeMobileMenu(event);
   });
 });
 
@@ -30,9 +34,14 @@ const headerLinks = document.querySelectorAll('.header-link');
 headerLinks.forEach(link =>
   link.addEventListener('click', event => {
     event.preventDefault();
-    const wishedSection = document.getElementById(link.getAttribute('href'));
-    wishedSection.scrollIntoView({
-      behavior: 'smooth',
-    });
+
+    const targetId = link.getAttribute('href').substring(1); 
+    const wishedSection = document.getElementById(targetId);
+
+    if (wishedSection) {
+      wishedSection.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
   })
 );
