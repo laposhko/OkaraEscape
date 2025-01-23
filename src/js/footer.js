@@ -40,7 +40,7 @@ footerLinks.forEach(link => {
         });
       }
     } else {
-      window.location.href = `/index.html#${targetId}`;
+      window.location.href = `${window.location.origin}/index.html#${targetId}`;
     }
   });
 });
