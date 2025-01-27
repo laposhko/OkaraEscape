@@ -178,3 +178,18 @@
     grid-column: 3;
   }
 }
+
+.how-play-list {
+  position: relative;
+}
+
+.how-play-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+}
